@@ -1,0 +1,29 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int roomCapacity = 0;
+    int numberOfPeople = 0;
+    int excess = 0;
+    int shortage = 0;
+
+    cout << "Maximum Room Capacity: ";
+    cin >> roomCapacity;
+
+    cout << "Number of people to attend: ";
+    cin >> numberOfPeople;
+
+    if(numberOfPeople <= roomCapacity){
+        shortage = roomCapacity - numberOfPeople;
+        cout << "\nLegal to conduct the meeting" << endl;
+        cout << "Extra seat(s): " << shortage << endl;
+    }else{
+        excess = numberOfPeople - roomCapacity;
+        cout << "\nNot legal to conduct the meeting due to fire regulations" << endl;
+        cout << "Please exclude " << excess << " people" << endl;
+    }
+
+    return 0;
+}
