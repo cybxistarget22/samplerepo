@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+
+    string numbers;
+    cout << "Enter a 3-digit integer: ";
+    cin >> numbers;
+
+    int first_num = numbers[0] - '0';
+    int second_num = numbers[1] - '0';
+    int third_num = numbers[2] - '0';
+
+    int sum = first_num + second_num + third_num;
+
+    cout << "The sum of each digits is: " << sum << endl;
+    return 0;
+}
