@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+
+    string numbers;
+    cout << "Enter a 3-digit integer: ";
+    cin >> numbers;
+
+    int first_num = numbers[0] - '0';
+    int second_num = numbers[1] - '0';
+    int third_num = numbers[2] - '0';
+
+    string digits = to_string(third_num) + to_string(second_num) + to_string(first_num);
+
+    cout << "Interchanging the First and Lastdigits: " << digits << endl;
+    return 0;
+}
